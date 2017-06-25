@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background: url("http://i.imgur.com/q0FaaAk.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Helvetica;
+}
+
+h1 {
+	font-family: Helvetica, sans-serif;
+	color: white;
+}
+
+h2, p {
+    color: white;
+}
+
+hr {
+  width: 200px;
+}
+
+ul
+li
+img
+
+
+#slogan {
+	color: white;
+	font-style: italic;
+	font-family: arial, sans-serif;
+}
