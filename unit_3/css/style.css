@@ -1,30 +1,68 @@
 body {
   text-align: center;
-  background: url("http://i.imgur.com/q0FaaAk.jpg") no-repeat center center fixed;
+  background: url("https://github.com/jamike15/jamike15.github.io/blob/master/unit_3/images/index_photo.jpg?raw=true") no-repeat center center fixed;
   background-size: cover;
-  font-family: Helvetica;
+  font-family: avenir, sans-serif;
+  font-size: 30px;
+  color: green;
 }
 
-h1 {
-	font-family: Helvetica, sans-serif;
+#title {
 	color: white;
+	font-style: normal;
+	font-family: avenir, sans-serif;
+	font-size: 60px;
 }
-
-h2, p {
-    color: white;
-}
-
-hr {
-  width: 200px;
-}
-
-ul
-li
-img
-
 
 #slogan {
 	color: white;
 	font-style: italic;
-	font-family: arial, sans-serif;
+	font-family: avenir, sans-serif;
+	font-size: 30px;
 }
+
+.titletext {
+	color: white;
+	font-family: avenir, sans-serif;
+	font-size: 20px;
+	text-align: left;
+	font-weight: 200;
+	text-align: center;
+}
+
+
+h1, p {
+    color: white;
+}
+
+h2 {
+	color: white;
+	text-align: left;
+	font-size: 30px;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+}
+
+hr {
+    height: 1px;
+    width: 200px;
+	color: white;
+}
+
+ul {
+	text-align: left;
+	color: white;
+	font-family: avenir, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	text-align: center;
+}
+
+li
+
+img
+
+
