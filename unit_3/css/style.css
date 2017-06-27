@@ -54,12 +54,12 @@ hr {
 }
 
 ul {
-	text-align: center;
 	color: white;
 	font-family: avenir, sans-serif;
 	font-size: 20px;
 	font-weight: 200;
 	text-shadow: 1px 1px #62615C;
+	text-align: center;
 }
 
 li
