@@ -1,6 +1,20 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	/*simple reset*/
+}
+
+main {
+	margin-top:700px;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	/*Set where the text and background-color should start*/
+}
+
 body {
   text-align: center;
-  background: url("https://github.com/jamike15/jamike15.github.io/blob/master/unit_3/images/index_photo.jpg?raw=true") no-repeat center center fixed;
+  background: url(../images/index_photo.jpg) no-repeat center center fixed;
   background-size: cover;
   font-family: avenir, sans-serif;
   font-size: 30px;
@@ -51,6 +65,7 @@ hr {
     height: 1px;
     width: 200px;
 	color: white;
+	margin: 15px auto;
 }
 
 ul {
@@ -59,7 +74,9 @@ ul {
 	font-size: 20px;
 	font-weight: 200;
 	text-shadow: 1px 1px #62615C;
-	text-align: center;
+	text-align: left;
+	width: 400px;
+	margin:15px auto;
 }
 
 li
