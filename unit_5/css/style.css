@@ -4,7 +4,6 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
-	vertical-align: top;
 	border: 0 none;
 	outline: 0;
 	/*simple reset*/
@@ -17,6 +16,11 @@ body {
 	font-size: 18px;
 }
 
+#wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 header {
 	padding: 0 0 1em 0;
 	text-align: center;
@@ -26,6 +30,46 @@ header {
 nav {
 	text-align: center;
 	background-color: #E8C66A;
+}
+
+#hero {
+	position: relative;
+	width: 100%;
+}
+
+#title {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	position: absolute;
+	text-align: center;
+	bottom: 100px;
+	width: 800px;
+	margin: 20px auto;
+	line-height: 1.4;
+	padding: 2em 0 2em 0;
+}
+
+#title span {
+	background-color: black;
+	color: #fff;
+	display: inline;
+	padding: 0.5rem;
+}
+
+#tellwhy {
+	width: 200px;
+	margin: 2em auto 2em auto;
+	border: 2px white solid;
+	padding: .75em .2em .75em .2em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: .15em;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
 }
 
 main {
@@ -81,7 +125,7 @@ hr {
 ul {
 	color: white;
 	font-family: 'Cutive Mono', monospace;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 400;
 	text-align: left;
 	width: 300px;
@@ -89,11 +133,6 @@ ul {
 }
 
 img {
-    max-width: 50%;
-    height: auto;
-}
-
-#heroimage {
     max-width: 100%;
     height: auto;
 }
@@ -116,24 +155,6 @@ img {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-}
-
-#title {
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 60px;
-	font-weight: 900;
-}
-
-#tellwhy {
-	width: 200px;
-	margin: 2em auto 2em auto;
-	border: 2px white solid;
-	padding: .75em .2em .75em .2em;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	font-weight: 200;
-	letter-spacing: .15em;
 }
 
 #why {
@@ -160,11 +181,30 @@ img {
 	background-color: orange;
 }
 
+.projectimage {
+	background:
+	url(../images/project1.png);
+	background-image: cover;
+	width: 300px;
+	height: 200px;
+	margin-bottom: 10px 0 0 0;
+	position: relative;
+	float: left;
+}
+
+.projectimage img {
+	width: 300px;
+}
+
 #team {
 	margin: 1em;
 	border: 5px purple solid;
 	padding: .5em;
 	background-color: pink;
+}
+
+#team img { 
+	width: 300px;
 }
 
 #contact {
