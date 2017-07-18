@@ -23,13 +23,50 @@ body {
 
 header {
 	padding: 0 0 1em 0;
-	text-align: center;
 	background-color: #FFED74;
 }
 
 nav {
-	text-align: center;
-	background-color: #E8C66A;
+	background-color: #FFED74;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+#headerlogo {
+	padding: 5px 0 0 10px;
+	background-color: #FFED74;
+	color: black;
+	text-align: left;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.navlink {
+	background-color: #FFED74;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	display: block;
+	float: right;
+	padding: 5px 20px 5px 30px;
+}
+
+a:hover {
+	background-color: white;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
 }
 
 #hero {
@@ -137,26 +174,6 @@ img {
     height: auto;
 }
 
-#headerlogo {
-	padding: .5em 0 0 1em;
-	background-color: #FFED74;
-	color: black;
-	text-align: left;
-	font-family: 'Cutive Mono', monospace;
-	font-size: 22px;
-	font-weight: 500;
-}
-
-#headernav {
-	padding: 0 1em .5em 0;
-	background-color: #FFED74;
-	color: black;
-	text-align: right;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-}
-
 #why {
 	margin: 1em;
 	border: 5px gray solid;
@@ -224,6 +241,18 @@ img {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	font-weight: 300;
+}
+
+.footerlink {
+	background-color: #FFED74;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding: 5px 20px 5px 30px;
 }
 
 #footer {
