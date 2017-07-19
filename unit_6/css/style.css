@@ -271,7 +271,7 @@ footer {
 #footernav a {
 	padding: 2px 15px 2px 15px;
 	border-left: 1px black solid;
-	border-right: 1px black solid;
+	/*border-right: 1px black solid;*/
 	text-decoration: none;
 	color: black;
 	display: inline-block;
