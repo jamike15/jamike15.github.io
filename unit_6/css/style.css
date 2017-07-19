@@ -12,41 +12,50 @@
 #wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: #E8E4DC;
-	color: green;
+	background-color: purple;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #E8DE46;
+	color: black;
 	font-size: 16px;
 	text-align: center;
-	font-family: 'Cutive Mono', monospace;
 }
 
 header {
-	background-color: blue;
+	background-color: white;
 	margin-bottom: 0;
+	position: relative;
+	z-index: 1;
+	/*z-index: bringt den Header vor das Heroimage, falls die Navbar
+	vor dem Heroimage (unten) sein soll*/
 }
 
 #headerlogo {
-	margin-top: 7px;
+	margin-top: 8px;
 	padding: 5px 10px 5px 10px;
-	background-color: white;
+	background-color: none;
 	color: black;
 	font-family: 'Cutive Mono', monospace;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 400;
-	display: inline-block;
 	float: left;
+	/*display: inline-block;*/
+	/*display inline-block not necessary as float 
+	turns any element in a block*/
 }
 
 nav {
-	margin: 10px 0px 10px 0px;
-	background-color: white;
-	font-family: 'Open Sans', sans-serif;
+	margin: 12px 0px 12px 0px;
+	background-color: none;
 	font-size: 16px;
 	font-weight: 300;
 	float: right;
 }
 
 nav a {
-	padding: 4px 15px 4px 15px;
+	padding: 2px 15px 2px 15px;
 	border-left: 1px black solid;
 	text-decoration: none;
 	color: black;
@@ -54,7 +63,8 @@ nav a {
 }
 
 nav a:hover {
-	color: orange;
+	text-decoration: underline;
+	color: #E8DE46;
 }
 
 .clearfix:after {
@@ -69,56 +79,44 @@ nav a:hover {
 #heroimage {
 	background: url(../images/index_photo2.jpg);
 	background-size: cover;
+	background-position: top center;
+	position: relative;
 	max-width: 100%;
+	height: 40em;
 }
 
-/*.inner {
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	max-width: none;
-}*/
-
-/*.content {
+.content {
+	position: absolute;
+	left: 8em;
+	top: 57%;
 	max-width: 500px;
-}*/
+}
 
 #title {
-	margin: auto;
-	padding: 2em 0 2em 0;
-	
-	/*this padding is used wrong! How to set the text nicely aligned with the image?
-	*/
-	
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 36px;
-	font-weight: 900;
+	text-align: center;
+	font-weight: 300;
 	width: 800px;
-	line-height: 1.4;
+	line-height: 1.1;
+	font-size: 60px;
+	color: white;
+	letter-spacing: .1em;
 }
 
 #title span {
-	background-color: black;
-	color: #fff;
-	display: inline;
-	padding: 0.2em;
-	letter-spacing: .25em;
+	background-color: #E8DE46;
+	opacity: 0.8;
 }
 
 .btn {
+	margin-top: 2em;
+	left: 40%;
 	display: inline-block;
-	border: 2px white solid;
+	border: 2px #E8DE46 solid;
 	padding: 10px 20px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
 	font-weight: 200;
 	letter-spacing: .15em;
-	bottom: 20px;
 	border-radius: 1px;
-	margin-bottom: 2em;
-	background-color: gray;
-	opacity: 0.8;
+	margin-left: 12em;
 }
 
 .btn a {
@@ -127,7 +125,7 @@ nav a:hover {
 }
 
 .btn a:hover {
-	color: black;
+	color: #E8DE46;
 }
 
 main {
@@ -137,10 +135,8 @@ main {
 }
 
 #why {
-	margin: 0em;
 	padding: 1em 0 2em 0;
 	background-color: white;
-	max-width: 1200px;
 }
 
 .titletext {
@@ -164,7 +160,7 @@ main {
 
 .column {
 	float: left;
-	width: 29%;
+	width: 29.33%;
 	padding: 2em 2%;
 	margin: 0 2% 0 2%;
 	display: inline-block;
@@ -182,20 +178,10 @@ main {
 	background: #E8DE46;
 }
 
-
-h1 {
-	color: black; 
-	font-family: 'Open Sans', sans-serif;
-	font-size: 60px;
-	font-weight: 900;
-	font-style: normal;
-}
-
 h2 {
 	margin: 0.5em auto 0.5em auto;
 	color: black;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
 	font-size: 40px;
 	font-weight: 500;
 	font-style: normal;
@@ -205,15 +191,11 @@ h2 {
 
 h3 {
 	color: black;
-	font-family: 'Open Sans', sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-p {
-    color: black;
-}
 
 hr {
     height: 1px;
@@ -229,14 +211,10 @@ ul {
 	font-size: 18px;
 	font-weight: 400;
 	text-align: left;
-	width: 300px;
 	list-style: disc;
-
 }
 
 #projects {
-	margin: 0;
-	border-top: 1px black solid;
 	padding: 1em 0 2em 0;
 	background-color: ##E8E4DC;;
 }
@@ -259,8 +237,6 @@ ul {
 }
 
 #team {
-	margin: 0;
-	border-top: 1px purple solid;
 	padding: 1em 0 2em 0;
 	background-color: pink;
 }
@@ -275,8 +251,6 @@ ul {
 }
 
 #contact {
-	margin: 0;
-	border-top: 1px green solid;
 	padding: 1em 0 2em 0;
 	background-color: #75F3DA;
 }
@@ -289,15 +263,13 @@ footer {
 #footernav {
 	padding: 2em 0px;
 	background-color: white;
-	border-top: 1px black solid;
-	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	float: none;
 }
 
 #footernav a {
-	padding: 4px 15px 4px 15px;
+	padding: 2px 15px 2px 15px;
 	border-left: 1px black solid;
 	border-right: 1px black solid;
 	text-decoration: none;
@@ -305,17 +277,20 @@ footer {
 	display: inline-block;
 }
 
+/*#footernav: last-of-type {
+	border-right: 1px black solid;
+}*/
+
 #footernav a:hover {
-	color: orange;
+	color: #E8DE46;
 }
 
 
 #footer {
-	margin: 0;
-	border-top: 1px brown solid;
 	padding: 2em 0px;
 	background-color: #A9A29D;
 	color: white;
+	font-weight: 300;
 }
 
 

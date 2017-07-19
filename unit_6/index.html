@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>clientfirst.ch</title>
 </head>
@@ -9,7 +8,7 @@
 <body>
 
 	<div ID="wrapper">
-		<header>
+		<header class="clearfix">
 			<h4 id="headerlogo">clientfirst.ch</h4>	
 			<nav class="clearfix">
 				<a href="index.html#why">WHY</a>
@@ -17,23 +16,19 @@
 				<a href="index.html#team">TEAM</a>
 				<a href="index.html#contact">CONTACT US</a>
 			</nav>
-			
-			<!-- why is the navigation bar not separate from the section "heroimage"? -->
-
-			<section ID="heroimage">
-				<div class="inner">
-					<div class="content">
-						
-					<h1 id="title">
-						<span>WHY DOES USER EXPERIENCE MATTER?</span>
-					</h1>
-					<h3 class="btn"> <a href="index.html#why">TELL ME WHY</a></h3>
-					</div>
-				</div>
-			</section>
 		</header>
 
+
 	<main>
+		<section ID="heroimage">
+			<div class="content">
+				<h1 id="title">
+					<span>WHY DOES USER EXPERIENCE MATTER?</span>
+				</h1>
+				<h3 class="btn"> <a href="index.html#why">TELL ME WHY</a></h3>
+			</div>
+		</section>
+
 		<section id="why">
 			<h2>WHY</h2>
 
@@ -76,7 +71,7 @@
 			<p class="titletext">We are driven by the desire to create a world where businesses provide digital solutions that solve human's problems and make them feel happy. Have a look at some projects we delivered.</p>
 			
 			<div class="clearfix">
-				<h3>PROJECT #1</h3>
+				<!-- <h3>PROJECT #1</h3> -->
 
 				<img src="images/project1.png" ALT="project1" Title="project #1">
 				<img src="images/project2.png" ALT="project2" Title="project #2">
