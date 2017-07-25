@@ -9,12 +9,6 @@
 	/*simple reset*/
 }
 
-#wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
-	background-color: purple;
-}
-
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #E8DE46;
@@ -24,6 +18,8 @@ body {
 }
 
 header {
+	max-width: 1200px;
+	margin: auto;
 	background-color: white;
 	margin-bottom: 0;
 	position: relative;
@@ -132,20 +128,24 @@ main {
 	text-align: center;
 	background-color: #E8E4DC;
 	max-width: 1200px;
+	margin: auto;
 }
 
 #why {
 	padding: 1em 0 2em 0;
 	background-color: white;
+	width: 1200px;
+	margin: auto;
 }
 
 .titletext {
 	margin-bottom: 2em;
+	padding: 0 1em 0 1em;
 	color: black;
 	font-family: 'Cutive Mono', monospace;
 	font-size: 18px;
 	font-weight: 400;
-	width: 400px;
+	max-width: 400px;
 	display: inline-block;
 }
 
@@ -162,8 +162,7 @@ main {
 	float: left;
 	width: 29.33%;
 	padding: 2em 2%;
-	margin: 0 2% 0 2%;
-	display: inline-block;
+	margin: 0 2% 2em 2%;
 }
 
 #column1 {
@@ -214,13 +213,23 @@ ul {
 	list-style: disc;
 }
 
+.video {
+	padding-top: 2em;
+}
+
 #projects {
 	padding: 1em 0 2em 0;
-	background-color: ##E8E4DC;;
+	background-color: ##E8E4DC;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: auto;
 }
 
 #projects img {
-	max-width: 300px;
+	width: 33%;
+	min-width: 250px;
 	opacity: 1.0;
 }
 
@@ -228,13 +237,13 @@ ul {
 	opacity: 0.5;
 }
 
-.projectimage {
+/*.projectimage {
 	width: 300px;
 	height: 200px;
 	margin-bottom: 10px 0 0 0;
 	position: relative;
 	float: left;
-}
+}*/
 
 #team {
 	padding: 1em 0 2em 0;
@@ -253,6 +262,27 @@ ul {
 #contact {
 	padding: 1em 0 2em 0;
 	background-color: #75F3DA;
+}
+
+.location {
+	margin: 1em auto 1em auto;
+}
+
+#address {
+	margin: 0 auto 0 auto;
+}
+
+#googlemaps {
+	padding: 0 1% 0 1%;
+}
+
+.overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:400px; /* your iframe height */
+   top:400px;  /* your iframe height */
+   margin-top:-400px;  /* your iframe height */
 }
 
 footer {
