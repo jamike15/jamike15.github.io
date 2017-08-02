@@ -359,9 +359,21 @@ footer {
 	float: none;
 	width: 100%;
 	margin: 0 auto;
-	padding: .5em 0 .5em 0;
+	padding: 1em 0 1em 0;
 	border-top: 1px black solid;
 	border-left: none;
+	}
+
+	#footernav	{
+		padding: 0;
+	}
+
+	#footernav a {
+		float: none;
+		display: block;
+		padding: 1em 0 1em 0;
+		margin: 0 auto;
+		border-top: 1px black solid;
 	}
 }
 
@@ -394,18 +406,6 @@ footer {
 	#team img {
 		width: 90%;
 		margin: 0 auto;
-	}
-
-	#footernav	{
-		padding: 0;
-	}
-
-	#footernav a {
-		float: none;
-		display: block;
-		padding: .5em 0 .5em 0;
-		margin: 0 auto;
-		border-top: 1px black solid;
 	}
 
 }
