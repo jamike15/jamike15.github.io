@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Open+Sans');
 
+
 *{
 	margin:0;
 	padding: 0;
@@ -33,7 +34,8 @@ header {
 	padding: .25em .5em .25em .5em;
 	background-color: none;
 	color: black;
-	font-family: 'Cutive Mono', monospace;
+	/*font-family: 'Cutive Mono', monospace;*/
+	font-family: 'Lora', serif;
 	font-size: 1.5em;
 	font-weight: 400;
 	float: left;
@@ -110,11 +112,11 @@ nav a:hover {
 	margin: 2em auto 0 auto;
 	left: 50%;
 	display: inline-block;
-	border: 2px #E8DE46 solid;
+	border: 1px #E8DE46 solid;
 	padding: .5em 1em;
 	font-weight: 200;
 	letter-spacing: .15em;
-	border-radius: 1px;
+	border-radius: 1%;
 }
 
 .btn a {
@@ -145,7 +147,7 @@ main {
 	color: black;
 	font-family: 'Cutive Mono', monospace;
 	font-size: 1.25em;
-	font-weight: 400;
+	font-weight: 100;
 	max-width: 400px;
 	display: inline-block;
 }
