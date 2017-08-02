@@ -215,8 +215,23 @@ ul {
 	list-style: disc;
 }
 
+#videotext {
+	margin:	2em auto 1em auto;
+}
+
 .video {
-	margin-top: 3em;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .wrapper {
@@ -355,17 +370,21 @@ footer {
 		max-width: 600px;
 	}
 
+	#headerlogo	{
+		margin: .25em auto;
+	}
+
 	nav {
-	margin-bottom: 0;
+		margin: 0;
+		float: none;
 	}
 
 	nav a {
-	float: none;
-	width: 100%;
-	margin: 0 auto;
-	padding: 1em 0 1em 0;
-	border-top: 1px black solid;
-	border-left: none;
+		width: 100%;
+		margin: 0 auto;
+		padding: 1em 0 1em 0;
+		border-top: 1px black solid;
+		border-left: none;
 	}
 
 	#footernav	{
@@ -401,11 +420,6 @@ footer {
 	.btn {
 		font-size: 1em;
 	}
-
-	.video {
-		max-width: 80%;
-		margin: 3em auto 0 auto;
-	}	
 
 	#team img {
 		width: 90%;
