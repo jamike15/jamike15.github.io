@@ -201,8 +201,7 @@ h3 {
 }
 
 h4 {
-	display: block;
-	color: rgba(255,255,255,1);
+	font-size: 1em;
 }
 
 hr {
@@ -226,24 +225,58 @@ ul {
 	margin:	2em auto 1em auto;
 }
 
-.wrapper {
-	max-width: 1200px;
-	margin: auto;
-}
+
+
+
 
 #projects {
 	padding: 1em 0 2em 0;
 	background-color: #E8E4DC;
 }
 
-#projects img {
-	width: 33%;
-	opacity: 1.0;
+.projectoverview {
+	position: relative;
+	float: left;
+	width: 300px;
 }
 
-#projects img:hover {
-	opacity: 0.5;
+#projects img {
+	display: inline-block;
+	width: 90%,
 }
+
+.projectheader {
+	display: block;
+}
+
+.overlay4 {
+	display: inline-block;
+	background-color:rgba(0,150,136,0);
+	color:rgba(255,255,255,0);
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+}
+
+#projects div:hover .overlay4 {
+	background-color:rgba(255, 255, 255, .5);
+	color:rgba(0, 0, 0, 1);
+}
+
+#project1 {
+	background: red;
+}
+
+#project2 {
+	background: blue;
+}
+
+#project3 {
+	background: green;
+}
+
+
+
 
 #team {
 	padding: 1em 0 2em 0;
@@ -255,10 +288,6 @@ ul {
 	width: 100%;
 }
 
-.employee:hover {
-	opacity: 0.5;
-}
-
 .employee {
 	position: relative;
 	width: 300px;
@@ -268,16 +297,32 @@ ul {
 
 .overlay2 {
 	position: absolute;
-	bottom: 1%;
-	background: rgba(128, 0, 128, 0.71);
+	bottom: 4%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+	color: rgba(255, 255, 255, 1);
+	width: 100%;
+	height: 16%;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.overlay3 {
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+	background-color: rgba(128, 0, 128, 0);
+	color: rgba(255, 255, 255, 0);
 	width: 100%;
 	display: block;
 	margin: 0 auto 0 auto;
 }
 
-.reveal {
-	color: rgba(255,255,255,0);
+#team div:hover .overlay3 {
+	background-color: rgba(128, 0, 128, 0);
+	color: rgba(255, 255, 255, 1);
 }
+
 
 #contact {
 	padding: 1em 0 2em 0;
