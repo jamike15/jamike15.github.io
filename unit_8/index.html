@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<div class="wrapper">
 	<header class="clearfix">
 		<h4 id="headerlogo">clientfirst.ch</h4>	
 		<nav class="clearfix">
@@ -36,7 +37,7 @@
 		
 			<p class="titletext">Because it sucks losing customers when not keeping up with the digital experience your clients expect from you.</p>
 		
-			<div class="clearfix">
+			<div class="clearfix wrapper">
 				<div class="column" id="column1">
 					<h3>What is UX?</h3>
 					<p class="text">User experience - UX, for short - is how a person feels when interacting with a digital product. The goal of UX design is to create an experience with users at the center. This approach is also called <a target="_blank" href="https://en.wikipedia.org/wiki/User-centered design" style="color: black"; >user-centered design</a>.
@@ -82,25 +83,26 @@
 			
 			<p class="titletext">We are driven by the desire to create a world where businesses provide digital solutions that solve humans' problems and make them feel happy. Have a look at some projects we delivered.</p>
 			
-			<div class="clearfix">
-				<div class="projectoverview" id="project1">
+			<div class="clearfix wrapper">
+				<div class="projectoverview">
 					<img src="images/project1.png" ALT="project1" Title="project #1">
-					<div class="overlay2">
-						<p class="projectheader">PROJECT CUPCAKE <br> (2016)</p>
+					<div class="overlay3">
+						<p>PROJECT CUPCAKE (2016)</p>
+						<p class="hidden">www.bestcupcakeintown.ch</p>
 					</div>
 				</div>
 
-				<div class="projectoverview" id="project2">
+				<div class="projectoverview">
 					<img src="images/project2.png" ALT="project2" Title="project #2">
-					<div class="overlay2">
-						<p class="projectheader">PROJECT MOBILE <br> (2017)</p>
+					<div class="overlay3">
+						<p>PROJECT MOBILE (2017)</p>
 					</div>					
 				</div>
 					
-				<div class="projectoverview" id=project3>
+				<div class="projectoverview">
 					<img src="images/project3.png" ALT="project3" Title="project #3">
-					<div class="overlay2">
-					<p class="projectheader">PROJECT VISION <br> (2020)</p>
+					<div class="overlay3">
+					<p>PROJECT VISION (2020)</p>
 					</div>
 				</div>
 			</div>
@@ -113,7 +115,7 @@
 			
 			<p class="titletext">Meet the happy people who always put clients first.</p>
 			
-			<div class="clearfix">
+			<div class="clearfix wrapper">
 
 				<div class="employee">
 					<img src="images/adam.png" ALT="employee1" Title="adam">
@@ -160,13 +162,11 @@
 				<img src="images/location.png">
 			</div>
 			<div ID="address">
-				<p class="titletext">Or meet us at our office:
-				<br>
-				<br>
-				Europaallee<br>8004 Zürich</p>
+				<p class="titletext">Or meet us at our office:</p>
+				<p ID="street">Europaallee<br>8004 Zürich</p>
 			</div>
 
-			<div ID="googlemaps">
+			<div ID="googlemaps" class="wrapper">
 				<div class="overlay" onClick="style.pointerEvents='none'"></div>
 				<!-- The div will cover the map, preventing pointer events from getting to it. But if you click on the div, it becomes transparent to pointer events, activating the map again! -->
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.669983380509!2d8.529157716404933!3d47.37935922917013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a103201e38d%3A0x730076d166b78d78!2sGustav-Gull+Platz!5e0!3m2!1sde!2sch!4v1500927986302" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -191,5 +191,6 @@
 		
 	</footer>
 
+</div>
 </body>
 </html>
