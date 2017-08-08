@@ -441,11 +441,6 @@ footer {
 		width: 90%;
 		margin: 0 auto 1em auto;
 	}
-
-/*	#projects img {
-		width: 90%;
-		max-width: 600px;
-	}*/
 	
 	.employee {
 		width:49%;
@@ -454,7 +449,7 @@ footer {
 	.projectoverview {
 		float: none;
 		width: 80%;
-		margin: 1%;
+		margin: .5%;
 	}
 
 
@@ -478,7 +473,7 @@ footer {
 	}
 
 	.projectoverview {
-		width: 90%;
+		width: 99%;
 	}
 }
 
@@ -516,8 +511,8 @@ footer {
 	}
 
 	.projectoverview {
-		margin: 1%;
-		width: 98%;
+		margin: .5%;
+		width: 99%;
 	}
 }
 
