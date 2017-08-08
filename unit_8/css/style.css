@@ -177,8 +177,6 @@ main {
 #why {
 	padding: 1em 0 2em 0;
 	background-color: white;
-	max-width: 1200px;
-	margin: auto;
 }
 
 .titletext {
@@ -190,6 +188,7 @@ main {
 	font-weight: 100;
 	max-width: 400px;
 	display: inline-block;
+	text-align: left;
 }
 
 .text {
@@ -237,12 +236,13 @@ main {
 .projectoverview {
 	position: relative;
 	float: left;
-	width: 300px;
+	width: 32.33%;
+	margin: .5%;
 }
 
 #projects img {
-	display: inline-block;
-	width: 90%;
+	display: block;
+	width: 100%;
 }
 
 .projectheader {
@@ -290,9 +290,9 @@ main {
 
 .employee {
 	position: relative;
-	width: 300px;
-	margin: 0 auto 1em auto;
-	display: inline-block;
+	width: 24%;
+	float: left;
+	margin: .5%;
 }
 
 .overlay2 {
@@ -302,24 +302,15 @@ main {
 	background-color: rgba(0, 0, 0, .5);
 	color: rgba(255, 255, 255, 1);
 	width: 100%;
-	height: 16%;
 	display: block;
 	margin: 0 auto 0 auto;
 }
 
-.overlay3 {
-	position: absolute;
-	bottom: 5%;
-	text-align: center;
-	background-color: rgba(128, 0, 128, 0);
+.hidden {
 	color: rgba(255, 255, 255, 0);
-	width: 100%;
-	display: block;
-	margin: 0 auto 0 auto;
 }
 
-#team div:hover .overlay3 {
-	background-color: rgba(128, 0, 128, 0);
+.employee:hover .hidden {
 	color: rgba(255, 255, 255, 1);
 }
 
@@ -387,7 +378,10 @@ footer {
 	color: white;
 	font-weight: 400;
 }
-
+.wrapper {
+	max-width:1200px;
+	margin:auto;
+}
 @media only screen and (max-width: 980px) {
 
 	#title {
@@ -452,6 +446,9 @@ footer {
 		margin: 0 auto;
 		border-top: 1px black solid;
 	}
+	.employee {
+		width:49%;
+	}
 }
 
 @media only screen and (max-width: 760px) {
@@ -487,6 +484,10 @@ footer {
 
 	hr {
     width: 75%;
+	}
+	.employee {
+		margin: 1%;
+		width:98%;
 	}
 }
 
