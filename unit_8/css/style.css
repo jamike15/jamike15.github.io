@@ -54,7 +54,7 @@ h4 {
 
 hr {
     height: 1px;
-    width: 200px;
+    width: 25%;
 	background-color: black;
 	margin: 1.5em auto 2em auto;
 }
@@ -186,9 +186,10 @@ main {
 	font-family: 'Cutive Mono', monospace;
 	font-size: 1.25em;
 	font-weight: 100;
-	max-width: 400px;
+	max-width: 50%;
 	display: block;
-	text-align: left;
+	text-align: center;
+
 }
 
 .text {
@@ -426,6 +427,10 @@ footer {
 		border-left: none;
 	}
 
+	hr {
+    width: 35%;
+	}
+
 	.titletext {
 		max-width: 80%;
 	}
@@ -448,10 +453,11 @@ footer {
 
 	.projectoverview {
 		float: none;
-		width: 80%;
-		margin: .5%;
+		display: block;
+		max-width: 600px;
+		width: 90%;
+		margin: 0 auto 1em auto;
 	}
-
 
 	#footernav	{
 		padding: 0;
@@ -468,6 +474,10 @@ footer {
 
 @media only screen and (max-width: 760px) {
 
+	hr {
+    width: 50%;
+	}
+
 	#title {
 		font-size: 3.5em;
 	}
@@ -478,6 +488,11 @@ footer {
 }
 
 @media only screen and (max-width:600px) {
+
+	.titletext {
+		width: 95%;
+		max-width: none;
+	}
 
 	.video {
 		position: relative;
@@ -497,12 +512,12 @@ footer {
 
 @media only screen and (max-width: 540px) {
 	
-	#title {
-	font-size: 3em;
+	hr {
+    width: 60%;
 	}
 
-	hr {
-    width: 75%;
+	#title {
+	font-size: 3em;
 	}
 
 	.employee {
